@@ -1,0 +1,73 @@
+﻿@using AccountingSubsystem.Domain.AggregatesModel
+@model List<AccountingSubsystem.Domain.AggregatesModel.InvoiceHeaders.InvoiceHeader>
+@{
+    ViewData["Title"] = "CRUDInvoiceHeader";
+    PagedList pager = new PagedList();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+<h1 style="text-align:center"> فاکتور</h1>
+<div class="row pt-3">
+    <div class="col-md-3">
+        <div class="d-flex flex-column mb-3">
+            <div>
+                <a class="btn btn-primary w-50" href="@Url.Action("Index","Home")">بازگشت</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="d-flex justify-content-between gap-4">
+            <a class="btn btn-primary w-50" asp-area="" asp-controller="InvoiceHeader" asp-action="CreateInvoiceHeader">افزودن</a>
+        </div>
+    </div>
+    <div class="col-md-9"></div>
+</div>
+
+
+<div class="row pt-3">
+    <form method="post" asp-controller="InvoiceHeader" asp-action="CRUDInvoiceHeader">
+        <span>جستجو: </span><input type="text" name="search" />
+        <input type="submit" value="جستجو" />
+        <br />
+        <br />
+        <partial name="_pagerInvoiceHeader" model="@pager"></partial>
+        <table class="table table-bordered table-striped">
+            <thead class="bg-dark text-white">
+                <tr>
+                    <th>Id</th>
+                    <th>فاکتور از طرف</th>
+                    <th>فاکتور به</th>
+                    <th>هزینه ها</th>
+                    <th>موضوع فاکتور</th>
+                    <th>تاریخ صدور</th>
+                                   </tr>
+            </thead>
+            <tbody>
+                @foreach (var company in Model)
+                {
+                    <tr>
+                        <td>@company.Id</td>
+                        <td>@company.From</td>
+                        <td>@company.To</td>
+                        <td>@company.Price</td>
+                        <td>@company.Subject</td>
+                        <td>@company.IssueDate</td>
+                        <td>
+                            <a href="UpdateInvoiceHeader/@company.Id"><input type="button" class="btn btn-info" value="ویرایش" /></a>|
+                            <a asp-controller="InvoiceHeader" asp-action="DeleteInvoiceHeader" asp-route-id="@company.Id" class="btn btn-danger">حذف</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </form>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

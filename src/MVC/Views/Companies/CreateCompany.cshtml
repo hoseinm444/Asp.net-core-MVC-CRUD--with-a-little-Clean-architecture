@@ -1,0 +1,57 @@
+﻿@model AccountingSubsystemIdentity.Models.Company.CompanyViewModel
+
+@{
+
+}
+
+<h1 style="text-align:center">ثبت شرکت جدید </h1>
+<form method="post" action="CreateCompany" class="mt-4">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <section>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                @*form-control,form-group///for learning purpose*@
+                <div class="form-group">
+                    <label asp-for="CompanyName" class="form-label"></label>
+                    <input asp-for="CompanyName" class="form-control" />
+                    <span asp-validation-for="CompanyName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="CompanyCode" class="form-label"></label>
+                    <input asp-for="CompanyCode" class="form-control" />
+                    <span asp-validation-for="CompanyCode" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="EconomicCode" class="form-label"></label>
+                    <input asp-for="EconomicCode" class="form-control" />
+                    <span asp-validation-for="EconomicCode" class="text-danger"></span>
+                </div>
+                <div class="form-group pt-1">
+                    <label asp-for="CompanyAddress" class="form-label"></label>
+                    <input asp-for="CompanyAddress" class="form-control" />
+                    <span asp-validation-for="CompanyAddress" class="text-danger"></span>
+                </div>
+                <div class="form-group pt-1">
+                    <label asp-for="CompanyPhoneNumber" class="form-label"></label>
+                    <input asp-for="CompanyPhoneNumber" class="form-control" />
+                    <span asp-validation-for="CompanyPhoneNumber" class="text-danger"></span>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <div class="row pt-3">
+        <div class="col-4"></div>
+        <div class="col-md-2">
+            <a type="button" class="w-75 h-100 btn-lg btn-danger text-center fw-bold" href="@Url.Action("CRUDCompany","Companies")">بازگشت</a>
+        </div>
+        <div class="col-3">
+
+            <button type="submit" class="w-50 btn-lg btn-primary" asp-controller="Companies" asp-action="CreateCompany">ذخیره</button>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</form>

@@ -1,0 +1,155 @@
+﻿@model AccountingSubsystemIdentity.Models.InvoiceDetail.UpdateInvoiceDetailViewModel
+@{
+}
+
+<h1 style="text-align:center">ویرایش جزئیات فاکتور </h1>
+<form method="post" action="UpdateInvoiceDetail" class="mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <section>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                @*form-control,form-group///for learning purpose*@
+                <div class="form-group">
+                    <label asp-for="taxid" class="form-label"></label>
+                    <input asp-for="taxid" class="form-control" />
+                    <span asp-validation-for="taxid" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="indatim" class="form-label"></label>
+                    <input asp-for="indatim" class="form-control" />
+                    <span asp-validation-for="indatim" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="indati2" class="form-label"></label>
+                    <input asp-for="indati2" class="form-control" />
+                    <span asp-validation-for="indati2" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="inty" class="form-label"></label>
+                    <input asp-for="inty" class="form-control" />
+                    <span asp-validation-for="inty" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="inno" class="form-label"></label>
+                    <input asp-for="inno" class="form-control" />
+                    <span asp-validation-for="inno" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="irtaxid" class="form-label"></label>
+                    <input asp-for="irtaxid" class="form-control" />
+                    <span asp-validation-for="irtaxid" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+
+                    <label asp-for="inp" class="form-label"></label>
+                    <input asp-for="inp" class="form-control" autocomplete="sstid" aria-required="true" />
+                    <span asp-validation-for="inp" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="ins" class="form-label"></label>
+                    <input asp-for="ins" class="form-control" />
+                    <span asp-validation-for="ins" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="tins" class="form-label"></label>
+                    <input asp-for="tins" class="form-control" />
+                    <span asp-validation-for="tins" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="tob" class="form-label"></label>
+                    <input asp-for="tob" class="form-control" />
+                    <span asp-validation-for="tob" class="text-danger"></span>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6">
+            <section>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+                <div class="form-group pt-1">
+                    <label asp-for="bid" class="form-label"></label>
+                    <input asp-for="bid" class="form-control" />
+                    <span asp-validation-for="bid" class="text-danger"></span>
+                </div>
+                <div class="form-group pt-1">
+                    <label asp-for="tinb" class="form-label"></label>
+                    <input asp-for="tinb" class="form-control" />
+                    <span asp-validation-for="tinb" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="sbc" class="form-label"></label>
+                    <input asp-for="sbc" class="form-control" />
+                    <span asp-validation-for="sbc" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="bpc" class="form-label"></label>
+                    <input asp-for="bpc" class="form-control" />
+                    <span asp-validation-for="bpc" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="bbc" class="form-label"></label>
+                    <input asp-for="bbc" class="form-control" />
+                    <span asp-validation-for="bbc" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="ft" class="form-label"></label>
+                    <input asp-for="ft" class="form-control" />
+                    <span asp-validation-for="ft" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="bpn" class="form-label"></label>
+                    <input asp-for="bpn" class="form-control" />
+                    <span asp-validation-for="bpn" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="scln" class="form-label"></label>
+                    <input asp-for="scln" class="form-control" />
+                    <span asp-validation-for="scln" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="scc" class="form-label"></label>
+                    <input asp-for="scc" class="form-control" />
+                    <span asp-validation-for="scc" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="crn" class="form-label"></label>
+                    <input asp-for="crn" class="form-control" />
+                    <span asp-validation-for="crn" class="text-danger"></span>
+                </div>
+            </section>
+        </div>
+    </div>
+<div class="row pt-3">
+        <div class="col-4"></div>
+        <div class="col-md-2">
+            <a type="button" class="w-75 h-100 btn-lg btn-danger text-center fw-bold" href="@Url.Action("CRUDInvoiceDetail","InvoiceDetail")">بازگشت</a>
+        </div>
+        <div class="col-3">
+
+            <button type="submit" class="w-50 btn-lg btn-primary" asp-controller="InvoiceDetail" asp-action="UpdateInvoiceDetail">ذخیره</button>
+        </div>
+        <div class="col-3"></div>
+</div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

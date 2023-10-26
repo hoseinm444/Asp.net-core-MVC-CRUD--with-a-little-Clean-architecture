@@ -1,0 +1,103 @@
+﻿@using AccountingSubsystem.Domain.AggregatesModel
+@model List<AccountingSubsystem.Domain.AggregatesModel.InvoiceDetail.InvoiceDetail>
+@{
+    ViewData["Title"] = "CRUDInvoiceDetail";
+    PagedList pager = new PagedList();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+<h1 style="text-align:center">جزئیات فاکتور</h1>
+<div class="row pt-3">
+    <div class="col-md-3">
+        <div class="d-flex flex-column mb-3">
+            <div>
+                <a class="btn btn-primary w-50" href="@Url.Action("Index","Home")">بازگشت</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="d-flex justify-content-between gap-4">
+            <a class="btn btn-primary w-50" asp-area="" asp-controller="InvoiceDetail" asp-action="CreateInvoiceDetail">افزودن</a>
+        </div>
+    </div>
+    <div class="col-md-9"></div>
+</div>
+
+
+<div class="row pt-3">
+    <form method="post" asp-controller="InvoiceDetail" asp-action="CRUDInvoiceDetail">
+        <span >جستجو: </span><input type="text" name="search" />
+        <input type="submit" value="جستجو" />
+        <br />
+        <br />
+         <partial name="_pagerInvoiceDetail" model="@pager"></partial>
+        <table class="table table-bordered table-striped">
+            <thead class="bg-dark text-white">
+                <tr>
+                    <th>Id</th>
+                    <th>شماره منحصر به فرد مالیاتی</th>
+                    <th>تاریخ و زمان صدور صورتحساب</th>
+                    <th>تاریخ و زمان صدور صورتحساب</th>
+                    <th>نوع صورت حساب</th>
+                    <th>سریال صورت حساب</th>
+                    <th>شماره منحصر به فرد مالیاتی صورتحساب مرجع</th>
+                    <th>الگوی صورتحساب</th>
+                    <th>موضوع صورتحساب</th>
+                    <th>نوع شخص خریدار</th>
+                    <th>شماره/شناسه ملی/شناسه مشاركت مدنی/كد فراگیر خریدار</th>
+                    <th>شماره اقتصادی خریدار</th>
+                    <th>تاریخ و زمان صدور صورتحساب</th>
+                    <th>كد شعبه فروشنده</th>
+                    <th>كد پستی خریدار</th>
+                    <th>كد شعبه خریدار</th>
+                    <th>نوع پرواز</th>
+                    <th>شماره گذرنامه خریدار</th>
+                    <th>شماره پروانه گمركی فروشنده</th>
+                    <th>كد گمرک محل اظهار</th>
+                    <th>شناسه یکتای ثبت قرارداد فروشنده</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var company in Model)
+                {
+                    <tr>
+                        <td>@company.Id</td>
+                        <td>@company.taxid</td>
+                        <td>@company.indatim</td>
+                        <td>@company.indati2</td>
+                        <td>@company.inty</td>
+                        <td>@company.inno</td>
+                        <td>@company.irtaxid</td>
+                        <td>@company.inp</td>
+                        <td>@company.ins</td>
+                        <td>@company.tins</td>
+                        <td>@company.tob</td>
+                        <td>@company.bid</td>
+                        <td>@company.tinb</td>
+                        <td>@company.sbc</td>
+                        <td>@company.bpc</td>
+                        <td>@company.bbc</td>
+                        <td>@company.ft</td>
+                        <td>@company.bpn</td>
+                        <td>@company.scln</td>
+                        <td>@company.scc</td>
+                        <td>@company.crn</td>
+                        <td>
+                            <a href="UpdateInvoiceDetail/@company.Id"><input type="button" class="btn btn-info" value="ویرایش" /></a>|
+                            <a asp-controller="InvoiceDetail" asp-action="DeleteInvoiceDetail" asp-route-id="@company.Id" class="btn btn-danger">حذف</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </form>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

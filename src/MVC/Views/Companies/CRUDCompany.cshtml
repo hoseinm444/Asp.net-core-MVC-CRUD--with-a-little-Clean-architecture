@@ -1,0 +1,74 @@
+﻿@using AccountingSubsystem.Domain.AggregatesModel
+@model List<AccountingSubsystem.Domain.AggregatesModel.Company.Company>
+@{
+    ViewData["Title"] = "CRUDCompany";
+    PagedList pager = new PagedList();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+<h1 style="text-align:center"> شرکت ها</h1>
+<div class="row pt-3">
+    <div class="col-md-3">
+        <div class="d-flex flex-column mb-3">
+            <div>
+                <a class="btn btn-primary w-50" href="@Url.Action("Index","Home")">بازگشت</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="d-flex justify-content-between gap-4">
+            <a class="btn btn-primary w-50" asp-area="" asp-controller="Companies" asp-action="CreateCompany">افزودن</a>
+        </div>
+    </div>
+    <div class="col-md-9"></div>
+</div>
+
+
+<div class="row pt-3">
+    <form method="post" asp-controller="Companies" asp-action="CRUDCompany">
+        <span>جستجو: </span><input type="text" name="search" />
+        <input type="submit" value="جستجو" />
+        <br />
+        <br />
+        <partial name="_pagerCompany" model="@pager"></partial>
+        <table class="table table-bordered table-striped">
+            <thead class="bg-dark text-white">
+                <tr>
+                    <th>Id</th>
+                    <th>نام شرکت</th>
+                    <th>کد شرکت</th>
+                    <th>کد اقتصادی</th>
+                    <th>آدرس شرکت</th>
+                    <th>شماره تلفن شرکت</th>
+                    <th>ویرایش | حذف</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var company in Model)
+                {
+                    <tr>
+                        <td>@company.Id</td>
+                        <td>@company.CompanyName</td>
+                        <td>@company.CompanyCode</td>
+                        <td>@company.EconomicCode</td>
+                        <td>@company.CompanyAddress</td>
+                        <td>@company.CompanyPhoneNumber</td>
+                        <td>
+                            <a href="UpdateCompany/@company.Id"><input type="button" class="btn btn-info" value="ویرایش" /></a>|
+                            <a asp-controller="Companies" asp-action="DeleteCompany" asp-route-id="@company.Id" class="btn btn-danger">حذف</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </form>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

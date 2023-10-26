@@ -1,0 +1,65 @@
+﻿@model AccountingSubsystemIdentity.Models.InvoiceHeader.InvoiceHeaderViewModel
+
+<h1 style="text-align:center">سر فاکتور جدید </h1>
+<form method="post" action="CreateInvoiceHeader" class="mt-4">
+    <div class="row">
+@*        <div class="row pt-3">
+            <div class="col-md-3">
+                <div class="d-flex flex-column mb-3">
+                    <div>
+                        <a class="btn btn-primary w-50" href="@Url.Action("CRUDInvoiceHeader","InvoiceHeader")">بازگشت</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9"></div> for learning purpose
+        </div>*@
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <section>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                @*form-control,form-group///for learning purpose*@
+                <div class="form-group">
+                    <label asp-for="From" class="form-label"></label>
+                    <input asp-for="From" class="form-control" />
+                    <span asp-validation-for="From" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="To" class="form-label"></label>
+                    <input asp-for="To" class="form-control" />
+                    <span asp-validation-for="To" class="text-danger"></span>
+                </div>
+
+                <div class="form-group pt-1">
+                    <label asp-for="Price" class="form-label"></label>
+                    <input asp-for="Price" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="form-group pt-1">
+                    <label asp-for="Subject" class="form-label"></label>
+                    <input asp-for="Subject" class="form-control" />
+                    <span asp-validation-for="Subject" class="text-danger"></span>
+                </div>
+                <div class="form-group pt-1">
+                    <label asp-for="IssueDate" class="form-label"></label>
+                    <input asp-for="IssueDate" class="form-control" />
+                    <span asp-validation-for="IssueDate" class="text-danger"></span>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <div class="row pt-3">
+        <div class="col-4"></div>
+        <div class="col-md-2">
+            <a type="button" class="w-75 h-100 btn-lg btn-danger text-center fw-bold" href="@Url.Action("CRUDInvoiceHeader","InvoiceHeader")">بازگشت</a>
+        </div>
+        <div class="col-3">
+            <button type="submit" class="w-50 btn-lg btn-primary" asp-controller="InvoiceHeader" asp-action="CreateInvoiceHeader">ذخیره</button>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

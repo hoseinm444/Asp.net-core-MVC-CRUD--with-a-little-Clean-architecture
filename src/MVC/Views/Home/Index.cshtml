@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">خوش آمدید </h1>
+    <div class="d-flex flex-column mb-5">@*coment:just for make distance with h1 and menue buttom*@
+    </div>
+    @*<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <section>
+                   @* <h2>Use a local account to login.</h2>*@
+                    <div class="d-flex flex-column mb-3">
+                        <div>
+                            @*   <button id="companyRegister" type="button" class="w-100 btn btn-lg btn-primary">ثبت نام شرکت</button>*@
+                        <a asp-controller="Companies" asp-action="CRUDCompany">
+                                <input type="button" class="w-100 btn btn-lg btn-primary" value="ثبت نام شرکت" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column mb-3">
+                       <div>
+                        <a asp-controller="InvoiceHeader" asp-action="CRUDInvoiceHeader">
+                            <input type="button" class="w-100 btn btn-lg btn-primary" value="سربرگ فاکتور" />
+                        </a>
+                    </div>
+                    </div>
+                    <div class="d-flex flex-column mb-3">
+                        <div>
+                            <a asp-controller="InvoiceDetail" asp-action="CRUDInvoiceDetail">
+                                <input type="button" class="w-100 btn btn-lg btn-primary" value="جزئیات فاکتور" />
+                            </a>
+                        </div>
+                    </div>
+                <div class="d-flex flex-column mb-3">
+                    <div>
+                        <a asp-controller="Test" asp-action="Index">
+                            <input type="button" class="w-100 btn btn-lg btn-primary" value="تست" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+
