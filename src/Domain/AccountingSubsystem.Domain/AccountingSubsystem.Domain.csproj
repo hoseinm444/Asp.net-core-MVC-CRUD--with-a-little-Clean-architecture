@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AggregatesModel\Company\CompanyDto.cs~RF19ae2320.TMP" />
+    <None Remove="AggregatesModel\Company\rcycn4kw.koe~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="jose-jwt" Version="4.1.0" />
+    <PackageReference Include="JsonApiDotNetCore" Version="5.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="TaxCollectData.Library" Version="0.0.12" />
+    <PackageReference Include="X.PagedList" Version="8.4.7" />
+  <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AccountingSubsystem.SeedWork\AccountingSubsystem.SeedWork.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AggregatesModel\Errors\" />
+  </ItemGroup>
+
+</Project>
