@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\Sync_tsp_Requests.cs~RF98d84b.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.2.1" />
+    <PackageReference Include="jose-jwt" Version="4.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AccountingSubsystem.Domain\AccountingSubsystem.Domain.csproj" />
+    <ProjectReference Include="..\AccountingSubsystem.Infra.Data.Sql\AccountingSubsystem.Infra.Data.Sql.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\certificate.csr" />
+    <None Include="wwwroot\private.key" />
+    <None Include="wwwroot\public.key" />
+  </ItemGroup>
+
+</Project>
