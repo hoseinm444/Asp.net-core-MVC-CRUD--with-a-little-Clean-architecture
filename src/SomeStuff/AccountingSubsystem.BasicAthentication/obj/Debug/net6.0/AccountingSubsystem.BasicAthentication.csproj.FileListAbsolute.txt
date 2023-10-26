@@ -1,0 +1,12 @@
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.BasicAthentication\bin\Debug\net6.0\AccountingSubsystem.BasicAthentication.deps.json
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.BasicAthentication\bin\Debug\net6.0\AccountingSubsystem.BasicAthentication.dll
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.BasicAthentication\bin\Debug\net6.0\AccountingSubsystem.BasicAthentication.pdb
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.BasicAthentication\obj\Debug\net6.0\AccountingSubsystem.BasicAthentication.csproj.AssemblyReference.cache
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.BasicAthentication\obj\Debug\net6.0\AccountingSubsystem.BasicAthentication.GeneratedMSBuildEditorConfig.editorconfig
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.BasicAthentication\obj\Debug\net6.0\AccountingSubsystem.BasicAthentication.AssemblyInfoInputs.cache
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.BasicAthentication\obj\Debug\net6.0\AccountingSubsystem.BasicAthentication.AssemblyInfo.cs
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.BasicAthentication\obj\Debug\net6.0\AccountingSubsystem.BasicAthentication.csproj.CoreCompileInputs.cache
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.BasicAthentication\obj\Debug\net6.0\AccountingSubsystem.BasicAthentication.dll
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.BasicAthentication\obj\Debug\net6.0\refint\AccountingSubsystem.BasicAthentication.dll
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.BasicAthentication\obj\Debug\net6.0\AccountingSubsystem.BasicAthentication.pdb
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.BasicAthentication\obj\Debug\net6.0\ref\AccountingSubsystem.BasicAthentication.dll
