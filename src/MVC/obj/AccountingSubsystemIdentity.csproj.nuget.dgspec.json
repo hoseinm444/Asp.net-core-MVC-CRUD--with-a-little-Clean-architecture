@@ -1,0 +1,361 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystemIdentity\\AccountingSubsystemIdentity.csproj": {}
+  },
+  "projects": {
+    "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.Domain\\AccountingSubsystem.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.Domain\\AccountingSubsystem.Domain.csproj",
+        "projectName": "AccountingSubsystem.Domain",
+        "projectPath": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.Domain\\AccountingSubsystem.Domain.csproj",
+        "packagesPath": "C:\\Users\\hosei\\.nuget\\packages\\",
+        "outputPath": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Another Doc\\Visual Studio 2022 Installation\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hosei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\Desktop": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.SeedWork\\AccountingSubsystem.SeedWork.csproj": {
+                "projectPath": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.SeedWork\\AccountingSubsystem.SeedWork.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "JsonApiDotNetCore": {
+              "target": "Package",
+              "version": "[5.1.2, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "TaxCollectData.Library": {
+              "target": "Package",
+              "version": "[0.0.12, )"
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[8.4.7, )"
+            },
+            "jose-jwt": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.Infra.Data.Sql\\AccountingSubsystem.Infra.Data.Sql.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.Infra.Data.Sql\\AccountingSubsystem.Infra.Data.Sql.csproj",
+        "projectName": "AccountingSubsystem.Infra.Data.Sql",
+        "projectPath": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.Infra.Data.Sql\\AccountingSubsystem.Infra.Data.Sql.csproj",
+        "packagesPath": "C:\\Users\\hosei\\.nuget\\packages\\",
+        "outputPath": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.Infra.Data.Sql\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Another Doc\\Visual Studio 2022 Installation\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hosei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\Desktop": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.Domain\\AccountingSubsystem.Domain.csproj": {
+                "projectPath": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.Domain\\AccountingSubsystem.Domain.csproj"
+              },
+              "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.SeedWork\\AccountingSubsystem.SeedWork.csproj": {
+                "projectPath": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.SeedWork\\AccountingSubsystem.SeedWork.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.AspNetCore.ApiAuthorization.IdentityServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.SeedWork\\AccountingSubsystem.SeedWork.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.SeedWork\\AccountingSubsystem.SeedWork.csproj",
+        "projectName": "AccountingSubsystem.SeedWork",
+        "projectPath": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.SeedWork\\AccountingSubsystem.SeedWork.csproj",
+        "packagesPath": "C:\\Users\\hosei\\.nuget\\packages\\",
+        "outputPath": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.SeedWork\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Another Doc\\Visual Studio 2022 Installation\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hosei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\Desktop": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystemIdentity\\AccountingSubsystemIdentity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystemIdentity\\AccountingSubsystemIdentity.csproj",
+        "projectName": "AccountingSubsystemIdentity",
+        "projectPath": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystemIdentity\\AccountingSubsystemIdentity.csproj",
+        "packagesPath": "C:\\Users\\hosei\\.nuget\\packages\\",
+        "outputPath": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystemIdentity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Another Doc\\Visual Studio 2022 Installation\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hosei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\Desktop": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.Domain\\AccountingSubsystem.Domain.csproj": {
+                "projectPath": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.Domain\\AccountingSubsystem.Domain.csproj"
+              },
+              "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.Infra.Data.Sql\\AccountingSubsystem.Infra.Data.Sql.csproj": {
+                "projectPath": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.Infra.Data.Sql\\AccountingSubsystem.Infra.Data.Sql.csproj"
+              },
+              "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.SeedWork\\AccountingSubsystem.SeedWork.csproj": {
+                "projectPath": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.SeedWork\\AccountingSubsystem.SeedWork.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "DataTables.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.7.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
