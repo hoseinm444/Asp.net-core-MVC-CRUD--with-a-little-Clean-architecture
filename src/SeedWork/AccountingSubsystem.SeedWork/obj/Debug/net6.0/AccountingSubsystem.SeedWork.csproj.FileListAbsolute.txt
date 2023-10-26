@@ -1,0 +1,12 @@
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.SeedWork\bin\Debug\net6.0\AccountingSubsystem.SeedWork.deps.json
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.SeedWork\bin\Debug\net6.0\AccountingSubsystem.SeedWork.dll
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.SeedWork\bin\Debug\net6.0\AccountingSubsystem.SeedWork.pdb
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.SeedWork\obj\Debug\net6.0\AccountingSubsystem.SeedWork.csproj.AssemblyReference.cache
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.SeedWork\obj\Debug\net6.0\AccountingSubsystem.SeedWork.GeneratedMSBuildEditorConfig.editorconfig
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.SeedWork\obj\Debug\net6.0\AccountingSubsystem.SeedWork.AssemblyInfoInputs.cache
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.SeedWork\obj\Debug\net6.0\AccountingSubsystem.SeedWork.AssemblyInfo.cs
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.SeedWork\obj\Debug\net6.0\AccountingSubsystem.SeedWork.csproj.CoreCompileInputs.cache
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.SeedWork\obj\Debug\net6.0\AccountingSubsystem.SeedWork.dll
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.SeedWork\obj\Debug\net6.0\refint\AccountingSubsystem.SeedWork.dll
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.SeedWork\obj\Debug\net6.0\AccountingSubsystem.SeedWork.pdb
+E:\Another Doc\Visual Studio 2022 project\AccountingSubsystem\AccountingSubsystem.SeedWork\obj\Debug\net6.0\ref\AccountingSubsystem.SeedWork.dll

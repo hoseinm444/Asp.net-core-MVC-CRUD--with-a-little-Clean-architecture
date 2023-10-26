@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "auUPOoyqRSRzIV1WUfWgcp//D3+zCrg/c0gMvB1GyXoo6AAeLeOkbXmRgwN0SwcBiUYCSqHT/VEkToxIZSO0iQ==",
+  "success": true,
+  "projectFilePath": "E:\\Another Doc\\Visual Studio 2022 project\\AccountingSubsystem\\AccountingSubsystem.SeedWork\\AccountingSubsystem.SeedWork.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hosei\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\hosei\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
